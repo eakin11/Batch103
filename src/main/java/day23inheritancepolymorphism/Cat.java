@@ -27,7 +27,7 @@ public class Cat extends Mammal {
         return new Mammal();
     }
 
-    /*
+   /*
         @Override annotation'ini kullanarak, Java'nin yaptigimiz Override islemini kontrol etmesini saglariz
         1)Override yaparken "method'un body" si degistirilir.
         2)Override yaparken ASLA method signature(isim ve parametre) degistirilemez.

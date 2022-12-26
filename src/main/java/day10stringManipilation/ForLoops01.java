@@ -2,127 +2,85 @@ package day10stringManipilation;
 
 public class ForLoops01 {
     public static void main(String[] args) {
-        //Example 1: Ekrana 5 kere "Hi" yazdiriniz
+        //Example 1: Ekrana 5000 kere "Hi" yazdiriniz.
         System.out.println("Hi");
         System.out.println("Hi");
         System.out.println("Hi");
         System.out.println("Hi");
         System.out.println("Hi");
 
+        //Tekrarli isler icin "loop" kullaniriz
+        //Dort cesit "loop" vardir; i)for-loop ii)while-loop iii)do-while-loop iv)for-each-loop
 
-        //  Tekrarli isler icin "loop" kullaniriz
-        //Dort cesit loop vardir
+        //i)for-loop
+        //Example 2: Ekrana 5 kere "Hi" yazdiriniz.
 
-
-//        for (int i = 1; i < 6; i++) {
-//            System.out.println("HI");
-//        }
-//
-//
-//        // 4 TEN 7 ye  KADAR TUM TAMSAYILARI YAZDIRINIZ
-//
-//
-//        for (int i = 4; i < 80; i = i + 1) {
-//
-//            System.out.println(i + " ");
-//
-//
-//        }
-        System.out.println();
-
-//        System.out.println();
-//        //Example 4:  14 den 5 e kadar tum tamsayilari ekrana yazdiran kodu yaziniz
-//
-//        for (int i = 14; i > 4; i--) {
-//
-//
-//            System.out.println(i + " ");
-//
-//
-//        }
-
-
-        //14 ten 5 e kadar tum cift sayilari yazdiriniz
-
-
-//        for (int i = 14; i > 4; i = i - 2) {
-//
-//
-//            if (i % 2 == 0) {
-//
-//                System.out.println(i);
-//            }
-
-//            System.out.println();
-//
-////Example 6:28 den 157 ye kadar tum tek tamsayilari yazdiriniz
-//
-//            for (int k= 28; k < 158;   k++) {
-//
-//
-//                if (k % 2 != 0) {
-//
-//                    System.out.println(k);
-//                }
-//
-//
-//            }
-//
-//
-//         //Java Stringini J*a*v*a*  Stringine ceviren kodu yaziniz
-//
-//        String str="Java";
-//
-//            for( int i =0   ; i<str.length()   ;   i++ ){
-//                System.out.print(str.charAt(i)  + "*");
-//
-//            }
-//
-//
-
-
-
-
-
-
-            //Example 6: Size verilen Stringde tekrarsiz karakterleri ekrana yazdiriniz
-        // "Hellooo   Ali"    ===>HeAi;
-
-            String s = "Hellooo Ali";
-
-       for( int i = 0 ;   i<s.length();  i++ ){
-            char c =s.charAt(i);
-
-           if(s.indexOf(c)==s.lastIndexOf(c)){
-
-           }
-
-       }
-
-
-
-
+        //  Baslangic degeri Loop hangi sart altinda calisacak Increment(Artirma) veya Decrement(Azaltma)
+        for( int i = 1      ;           i<6                   ;               i++                ){
+            System.out.println("Hi");
         }
 
+        //Example 3: 4 den 7 e kadar tum tamsayilari ekrana yazdiran kodu yaziniz
+        for(int i=4; i<8; i++){
+            System.out.print(i + " ");
+        }
 
+        System.out.println();
 
+        //Example 4: 14 den 5 e kadar tum tamsayilari ekrana yazdiran kodu yaziniz
+        for(int i=8;  i>4; i--){
+            System.out.print(i + " ");
+        }
 
+        System.out.println();
+
+        //Example 5: 13 den 5 e kadar tum cift tamsayilari ekrana yazdiran kodu yaziniz
+        //Cift sayilar: 14, 12, 10, 8, ...
+
+        //1.Yol:
+        for(int i=14; i>4;  i=i-2){
+            System.out.print(i + " ");//14 12 10 8 6
+        }
+
+        System.out.println();
+
+        //2.Yol:
+        for(int i=14; i>4; i--){
+            if(i%2==0){
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println();
+
+        //Example 6: 28 den 157 e kadar tum tek tamsayilari ekrana yazdiran kodu yaziniz
+        for(int i=28; i<158; i++){
+            if(i%2!=0){
+                System.out.print(i + " ");
+            }
+        }
+
+        System.out.println();
+
+        //Example 7: "Java" String'ini "J*a*v*a*" String'ine ceviren kodu yaziniz
+        String str = "Java";
+        for(int i=0; i<str.length(); i++){
+            System.out.print(str.charAt(i) + "*");
+        }
+
+        System.out.println();
+
+        //Example 8: Size verilen String'de tekrarsiz karakterleri ekrana yazdiriniz
+        //           "Hellooo Ali" ==> He Ai
+        String s = "Hellooo Ali";
+        for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
+            if(s.indexOf(c)==s.lastIndexOf(c)){
+                System.out.print(c);//He Ai
+            }
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

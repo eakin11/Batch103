@@ -19,6 +19,9 @@ public class Queue01 {
         wareHouse.add("Bread");
         wareHouse.add("Honey");
         wareHouse.add("Tomatoes");
+        wareHouse.add("Tomatoes");
+
+
 
         System.out.println(wareHouse);// [Milk, Meat, Bread, Honey, Tomatoes]
 

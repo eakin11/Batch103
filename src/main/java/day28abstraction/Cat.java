@@ -16,4 +16,5 @@ public  class Cat extends  Mammal {
     public void move() {
         System.out.println("Cats move");
     }
+
 }

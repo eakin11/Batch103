@@ -1,6 +1,5 @@
 package day29abstractioncollections;
 
-
  /*
         "abstract method" lar sadece ne yapilacagini soyler(what to do)
         "concrete method" lar ne yapilacagi(what to do) ile birlikte nasil yapilacagini(How to do) da soyler.

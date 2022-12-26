@@ -15,6 +15,7 @@ public class PriorityQueue01 {
         myQueue.add("G");
         myQueue.add("C");
 
+
         System.out.println(myQueue);//[A, C, B, G, E]
 
 

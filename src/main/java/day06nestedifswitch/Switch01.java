@@ -5,77 +5,44 @@ import java.util.Scanner;
 public class Switch01 {
 
     public static void main(String[] args) {
-        /*
-        Kullanicidan gun sayisini aliniz ve gun ismini ekrana yazdiriniz.
-        1===>Pazar         2===>Pazartesi ....
+           /*
+            Kullaniciya ay ismi sorunuz ve kullanicinin verdigi ay isminden son aya kadar ekrana yazdiriniz
+        */
 
-         */
-
+        //Note: toLowerCase() methodu bir String'deki tum character'leri kucuk harfe cevirir.
+        //      toUpperCase() methodu bir String'deki tum character'leri buyuk harfe cevirir.
         Scanner input = new Scanner(System.in);
-        System.out.println("Gun numarasi giriniz");
-        byte gunNo = input.nextByte();
+        System.out.println("Ay ismini giriniz...");
+        String ayIsmi = input.next().toLowerCase();
 
-        //1.YOL : İF İLE
-
-        if (gunNo == 1) {
-            System.out.println("Pazar");
-        } else if (gunNo == 2) {
-            System.out.println("Pazartesi");
-        } else if (gunNo == 3) {
-            System.out.println("Salı");
-        } else if (gunNo == 4) {
-            System.out.println("Carsamba");
-        } else if (gunNo == 5) {
-            System.out.println("Persembe");
-        } else if (gunNo == 6) {
-            System.out.println("Cuma");
-        } else if (gunNo == 6) {
-            System.out.println("Cuma");
-        } else if (gunNo == 6) {
-            System.out.println("Cumartesi");
-        } else {
-            System.out.println("Gecerli gun giriniz");
-        }
-
-        //2.Yol
-        switch (gunNo) {
-            case 1:
-                System.out.println("Pazar");
+        switch(ayIsmi){
+            case "ocak":
+                System.out.println("Ocak");
+            case "subat":
+                System.out.println("Subat");
+            case "mart":
+                System.out.println("Mart");
+            case "nisan":
+                System.out.println("Nisan");
+            case "mayis":
+                System.out.println("Mayis");
+            case "haziran":
+                System.out.println("Haziran");
+            case "temmuz":
+                System.out.println("Temmuz");
+            case "agustos":
+                System.out.println("Agustos");
+            case "eylul":
+                System.out.println("Eylul");
+            case "ekim":
+                System.out.println("Ekim");
+            case "kasim":
+                System.out.println("Kasim");
+            case "aralik":
+                System.out.println("Aralik");
                 break;
-            case 2:
-                System.out.println("Pazartesi");
-                break;
-            case 3:
-                System.out.println("Salı");
-                break;
-
-
-            case 4:
-                System.out.println("Çarsamba");
-                 break;
-            case 5:
-                System.out.println("Persembe");
-                break;
-            case 6:
-                System.out.println("Cuma");
-                break;
-
-            case 7:
-                System.out.println("Cumartesi");
-                break;
-
-
             default:
-                System.out.println("Geceli gun gırınız");
-
+                System.out.println("Gecerli ay ismi giriniz...");
         }
-
-
     }
-
-
 }
-
-
-//2.Gün
-

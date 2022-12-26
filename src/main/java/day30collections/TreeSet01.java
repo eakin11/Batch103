@@ -27,6 +27,7 @@ public class TreeSet01 {
         emails.add("z@gmail.com");
         emails.add("k@gmail.com");
         emails.add("d@gmail.com");
+        emails.add("z@gmail.com");
         System.out.println(emails);// [a@gmail.com, b@gmail.com, c@gmail.com, d@gmail.com, k@gmail.com, m@gmail.com, y@gmail.com, z@gmail.com]
         Long end1 = LocalTime.now().toNanoOfDay();
         System.out.println(end1 - start1);//3254000

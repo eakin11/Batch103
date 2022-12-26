@@ -4,7 +4,7 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        //Inheritance'da variable'lar secilirken Java object'in data type'ina bakar.
+        //Inheritance'da "variable'lar secilirken Java object'in data type'ina bakar."
         //Oncelikle istediginiz variable'i Object'in data type'i olan Class'da arar.
         //O Class'da bulamamzsa Parent Class'lara bakar.
         //Hicbir Parent Class'da bulamazsa hata verir
@@ -21,10 +21,13 @@ public class Runner {
 
         //Object olustururken Object'in data type'i Child Class'lardan secilemez
 
-        //Inheritance'da variable'lar secilirken Java Constructor'a bakar
-        //Oncelikle istediginiz method'u Constructori kullanilan Class'dan alir
+        //Inheritance'da "method'lar secilirken Java Constructor'a bakar"
+        //Oncelikle, istediginiz method'u Constructori kullanilan Class'dan alir.
+        //O Class'da bulamazsa Parent Class'lara bakar.
+        //Hicbir yerde o method'u bulamazsa hata verir.
         Cat cat4 = new Cat();
         cat4.eat();//Cat eat
+        cat4.drink();
 
         Mammal cat5 = new Mammal();
         cat5.eat();// Mammal eat
@@ -33,6 +36,7 @@ public class Runner {
         catt6.eat();//Animal eat
     }
 
+}
 
 
 
@@ -49,7 +53,6 @@ public class Runner {
 
 
 
-    }
 
 
 

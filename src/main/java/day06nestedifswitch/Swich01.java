@@ -6,7 +6,7 @@ public class Swich01 {
 
     public static void main(String[] args) {
 
-        /*
+      /*
         Kullaniciya ay ismi sorunuz ve kullanicinin verdigi ay isminden son aya kadar ekrana yazdiriniz.
 
 

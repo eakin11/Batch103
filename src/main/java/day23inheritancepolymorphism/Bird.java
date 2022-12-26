@@ -1,8 +1,7 @@
 package day23inheritancepolymorphism;
 
 public class Bird extends Animal  {
-
-/*
+ /*
         "final" keyword nedir?
 
         "final" keyword i)Variable'larda kullanilabilir

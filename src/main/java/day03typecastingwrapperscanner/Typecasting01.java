@@ -1,48 +1,39 @@
 package day03typecastingwrapperscanner;
 
 public class Typecasting01 {
-    //Type Casting:Bir numerik data tipini diger numerik data tipine çevirmektir.
-    // byte<short<int<long<float<double
+    //Type Casting: Bir numeric data type'ini diger numeric data type'ina cevirmek demektir.
+    //              byte < short < int < long < float < double
 
-    //Kuçukten buyuge donusturmeye:Auto widening
-    //Buyukten kucuge cevirmeye :Explicit   Narrowing
-   //                            (Acıkca    Daraltma) demek
+    //Note 1: Kucuk data type'ini buyuk data type'ine cevirmeye "Auto Widening" denir
+    //Note 2: Buyuk data type'ini kucuk data type'ine cevirmeye "Explicit Narrowing" denir
 
-    //Not:Kucuk data tipini buyuk data tipine cevirmeye "Auto Widening"
-    //    Buyuk data tipini kucuk data tipine cevirmeye  "Explicit   Narrowing"
 
     public static void main(String[] args) {
 
         byte age = 23;
-
         int newAge = age;
-        //Kucuk memory'i buyuk memory'in icine koymak kolay oldugu icin java bunu otomatik yapar.
-        //Dönüştürmesi kolay oldugu icin  "Auto Widening" denir.
-
 
         long population = 1234;
-        int newPopulation =(int)population;
+        int newPopulation = (int) population;
 
-        //Example 1 short'u double'A ceviren kodu yaziniz
-        //          float'i byte yapan kodu yaziniz.
+        //Example 1: short'u double'a ceviren kodu yaziniz
+        short numOfStudents = 235;
+        double newNumOfStudents = numOfStudents;//Auto Widening
 
-        short numOfStudents = 4000;
-        double newNumOfStudent = numOfStudents;
+        // Example 2: float'i byte yapan kodu yaziniz.
+        float price = 12.99F;
+        byte newPrice = (byte) price;//Explicit Narrowing
 
-       float price = 12.99F;
-       byte newPrice = (byte)price;
-
-        System.out.println(newPrice);//
-
+        System.out.println(newPrice);//12 ==> Java ondalik sayiyi, tam sayiya cevirirken yuvarlama islemi yapmaz.
+        //       Java ondalik sayiyi, tam sayiya cevirirken ondalik kismini siler.
 
         int number = 515;
-        byte newNumber =(byte) number;
-        System.out.println(newNumber);
+        byte newNumber = (byte) number;
+        System.out.println(newNumber);//3 ==> Java 515'i 256(byte daki sayilarin sayisi)'ya boldu kalani return etti.
 
-
-
-
-
+        int num = 510;
+        byte newNum = (byte) num;
+        System.out.println(newNum);// -2
     }
 
 
